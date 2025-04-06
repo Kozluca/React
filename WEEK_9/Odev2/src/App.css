@@ -1,0 +1,53 @@
+body{
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+}
+.resultInformation{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resultImage{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 70px;
+}
+.resultInformation2{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 260px;
+}
+.resultInformation h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.resultInformation h4 {
+  color: blueviolet;
+}
+.Button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Button button{
+  margin-top: 30px;
+  font-size: 30px;
+  color: rgb(155, 139, 110);
+  height: 50px;
+  width: 300px;
+  background-color: aqua;
+  border-radius: 10px;
+}
+.DicleResult{
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
