@@ -1,0 +1,320 @@
+.navbar{
+    z-index: 1000; /* Menü, diğer öğelerin önünde olacak şekilde ayarlanır */
+    width: 100%; /* Menü genişliği tam ekran yapılır */
+    background-color: #355592; /* Menü arka plan rengi mavi */
+    display: flex; /* Flexbox düzeni kullanılır */
+    justify-content: space-around; /* Menü öğeleri arasında eşit boşluk bırakılır */
+    position: fixed; /* Menü ekranın üst kısmına sabitlenir */
+}
+.nav-links{
+    margin-right: 300px; /* Menü öğeleri sağa 300px uzaklaştırılır */
+    padding-top: 20px; /* Üstten 20px boşluk bırakılır */
+    list-style: none; /* Liste işaretleri kaldırılır */
+    display: flex; /* Menü öğeleri yatayda sıralanır */
+    gap: 30px; /* Menü öğeleri arasına 30px boşluk bırakılır */
+}
+.navbar ul li a{
+    font-size: 20px; /* Bağlantı metin boyutu */
+    text-decoration: none; /* Bağlantı alt çizgisi kaldırılır */
+    color: white; /* Metin rengi beyaz yapılır */
+}
+.navbar ul li a:hover{
+    background-color: #F29B11; /* Hover durumunda arka plan rengi sarı olur */
+    padding: 10px; /* Padding eklenir */
+    border-radius: 10px; /* Köşe yuvarlama uygulanır */
+}
+.hamburger {
+    display: none; /* Mobilde menü simgesi varsayılan olarak gizlidir */
+    flex-direction: column; /* Menü simgesindeki çizgileri dikey hizalar */
+    gap: 5px; /* Çizgiler arasına 5px boşluk bırakır */
+    cursor: pointer; /* Fare simgesi el olur */
+}
+.hamburger div {
+    width: 30px; /* Çizgi genişliği */
+    height: 3px; /* Çizgi yüksekliği */
+    background-color: white; /* Çizgi rengi beyaz */
+}
+.HomePage-Content{
+    margin-left: 20%; /* Sol kenara 20% boşluk bırakılır */
+}
+.HomePage-Btn{
+    display: flex;
+    gap: 10px;
+    margin-top: -20px; /* Üstten -30px boşluk bırakılır */
+    padding-bottom: 100px; /* Alt boşluk bırakılır */
+}
+.HomePage-Btn button{
+    
+    padding: 5px; /* Buton içine 5px boşluk bırakılır */
+    border: solid 1px white; /* Buton kenarını beyaz renkte yapar */
+    color: white; /* Buton metni beyaz yapılır */
+    background-color: transparent; 
+    
+    border-radius: 5px; /* Buton köşeleri yuvarlatılır */
+    font-size: 24px; /* Buton metni font boyutu */
+    gap: 20px; /* Buton içeriği arasına 20px boşluk bırakılır */
+    cursor: pointer; /* Fare simgesi el olur */
+    font-weight: bold; /* Buton metni kalın yapılır */
+}
+.HomePage-Btn button:hover{
+    background-color: #355592; /* Hover durumunda buton arka plan rengi değişir */
+}
+.HomePage-Content h3{
+    color: white; /* Başlık metni beyaz yapılır */
+    font-size: 24px; /* Başlık boyutu */
+    margin-top: 225px; /* Üstten 225px boşluk bırakılır */
+    padding: 5px; /* Padding eklenir */
+    border-radius: 5px; /* Başlık köşeleri yuvarlatılır */
+    background-color: #355592; /* Başlık arka planı mavi yapılır */
+    display: inline-block; /* Başlık satır içi öğe olarak gösterilir */
+}
+.HomePage-Content h2{
+    font-size: 48px; /* Alt başlık font boyutu */
+    color: white; /* Alt başlık rengi beyaz yapılır */
+}
+.HomePage-Paragraph p{
+    color: white;
+    margin-top: -30px; /* Üstten -30px boşluk bırakılır */
+    background-color: rgba(6, 6, 6, 0.8); /* Arka plan şeffaf siyah yapılır */
+    font-size: 24px; /* Font boyutu */
+    font-weight: bold;
+    max-width: 800px; /* Maksimum genişlik 800px ile sınırlandırılır */
+    padding-left: 10px;
+}
+.home-Page{
+    background-color: grey;
+    background-image: url('/images/hero-man.jpg'); /* Arka plan görseli eklenir */
+    background-size: cover; /* Görselin boyutu ekranı kaplayacak şekilde ayarlanır */
+    background-position: center; /* Görselin merkezi ekrana hizalanır */
+}
+.HomePage-Boxes{
+    padding-top: 20px; /* Üstten 20px boşluk bırakılır */
+    gap: 20px; /* Kutular arasına 20px boşluk bırakılır */
+    display: flex; /* Flex düzeni kullanılır */
+    justify-content: center; /* Kutular yatayda ortalanır */
+    padding-bottom: 20px; /* Alt boşluk bırakılır */
+    background-color: #F1F8FF; /* Arka plan rengi açık mavi yapılır */
+    margin-top: -40px; /* Üstten -40px boşluk bırakılır */
+}
+.box-1{
+    background-color: white; /* Arka plan rengi beyaz yapılır */
+    padding-top: 10px; /* Üstten 10px boşluk bırakılır */
+    text-align: center; /* İçerik ortalanır */
+    height: 100px; /* Yükseklik belirlenir */
+    width: 200px; /* Genişlik belirlenir */
+}
+.box-1 h2{
+    color: #37548C;
+}
+.box-1 p{
+    color: #222327;
+    font-weight: bold;
+}
+/* mobil görünüm */
+@media(max-width:576px){
+       
+    /* 1. sayfa */
+.nav-links {
+    display: none; /* Başlangıçta navigasyon linklerini gizler */
+    position: absolute; /* Navigasyonun konumunu mutlak yapar */
+    top: 70px; /* Üstten 70px boşluk bırakır */
+    left: 0; /* Sol kenara hizalar */
+    width: 100%; /* Genişliği %100 yapar */
+    background-color: rgba(6, 6, 6, 0.8); /* Arka plan rengi koyu şeffaf */
+    flex-direction: column; /* Flex düzeninde öğeleri dikey sıralar */
+    align-items: center; /* Öğeleri ortalar */
+    z-index: 1; /* Z-index ile ön planda olmasını sağlar */
+}
+
+.nav-links.open {
+    display: flex; /* Navigasyon açıldığında flex düzeni ile gösterilir */
+}
+.HomePage-logo img {
+    justify-content: start; /* Logo resmini sola hizalar */
+}
+.hamburger {
+    float: right; /* Hamburger menüsünü sağa yaslar */
+    text-align: center; /* Ortalar */
+    align-items: end; /* Elemanları alt kısma hizalar */
+    justify-content: center; /* İçeriği ortalar */
+    display: flex; /* Flex düzeni kullanılır */
+}
+.HomePage-Content {
+    margin: 0 20px; /* Sayfanın sol ve sağ kenarlarından 20px boşluk bırakır */
+}
+.HomePage-Paragraph p {
+    padding-left: 10px; /* Sol iç boşluk */
+    padding-right: 15px; /* Sağ iç boşluk */
+}
+.HomePage-Btn {
+    padding-top: 10px; /* Üstten 10px iç boşluk bırakır */
+}
+.HomePage-Btn button {
+    padding-left: 15px; /* Sol iç boşluk bırakır */
+    text-align: start; /* Metni sola hizalar */
+    width: 100%; /* Düğmeyi tam genişlikte yapar */
+}
+
+/* 1.sayfa alt kısım */
+.HomePage-Boxes {
+flex-direction: column; /* Kutuları dikey sıralar */
+justify-content: center; /* İçeriği ortalar */
+align-items: center; /* İçeriği yatayda ortalar */
+width: 100%; /* Genişliği %100 yapar */
+}
+.box-1 {
+width: 60%; /* Box-1'in genişliğini %60 olarak ayarlar */
+}
+/* 1. sayfa bitiş */
+
+   /* 2.sayfa  */
+   .SecondPage-Start {
+    text-align: center; /* Metni ortalar */
+    justify-content: center; /* İçeriği ortalar */
+    align-items: center; /* İçeriği ortalar */
+}
+.page-titles p {
+    text-align: center; /* Sayfa başlıklarını ortalar */
+    max-width: 200px; /* Başlıklar için maksimum genişlik */
+}
+
+.SecondPage-btns {
+    margin: 30px 30px; /* Düğmelerin etrafında boşluk bırakır */
+    display: grid; /* Grid düzeni kullanılır */
+    grid-template-columns: repeat(2, 1fr); /* İki eşit sütun oluşturur */
+    gap: 20px; /* Sütunlar arasına 20px boşluk bırakır */
+}
+.container-2part {
+    grid-template-columns: 1fr; /* Sadece bir sütun kullanır */
+}
+
+.secondPage-LeftSideContent {
+    margin: 10px 30px; /* Sol ve sağ kenarlardan 30px boşluk bırakır */
+    text-align: start; /* Metni sola hizalar */
+}
+.secondPage-RightSide img {
+    width: 100%; /* Resmi tam genişlikte yapar */
+}
+.secondPage-LeftSideContent2 {
+    margin: 10px 30px; /* Sol ve sağ kenarlardan 30px boşluk bırakır */
+    text-align: start; /* Metni sola hizalar */
+}
+.secondPage-LeftSideContent2 p {
+    max-width: 520px; /* Paragraflar için maksimum genişlik */
+}
+.secondPage-RightSide {
+    margin-top: 50px; /* Üstten 50px boşluk bırakır */
+}
+
+/* 2. sayfa bitiş */
+/* 3.sayfa */
+.container-3part {
+    grid-template-columns: 1fr; /* Sadece bir sütun kullanır */
+    margin: 0 20px; /* Sol ve sağ kenarlardan 20px boşluk bırakır */
+}
+
+.image-container {
+    width: 85%; /* Görsel konteynerinin genişliğini %85 yapar */
+    margin-bottom: 20px; /* Alt boşluk bırakır */
+}
+
+.image-container img {
+    width: 100%; /* Resmi tam genişlikte yapar */
+    height: auto; /* Yüksekliği otomatik ayarlar */
+}
+
+.card-content h3 {
+    font-size: 18px; /* Başlık yazı boyutunu 18px yapar */
+}
+
+.card-content h4 {
+    font-size: 16px; /* Alt başlık yazı boyutunu 16px yapar */
+}
+
+.card-content p {
+    margin-left: 25%; /* Sol boşluk bırakır */
+    font-size: 14px; /* Paragraf yazı boyutunu 14px yapar */
+}
+
+.container-cards {
+    flex-direction: column; /* Kartları dikey sıralar */
+    align-items: center; /* Kartları ortalar */
+}
+
+.card-container {
+    width: 85%; /* Kart genişliğini %85 yapar */
+    margin: 0 25px; /* Kartların sağ ve sol kenarlarından 25px boşluk bırakır */
+}
+
+.card {
+    width: 100%; /* Kart genişliğini tam yapar */
+}
+
+.card img {
+    width: 100%; /* Resmi kart boyutuna uyumlu yapar */
+}
+/* 4.Sayfa */
+.comments {
+    flex-direction: column; /* Yorumları dikey sıralar */
+    align-items: center; /* Yorumları ortalar */
+    gap: 180px; /* Yorumlar arasına 180px boşluk bırakır */
+}
+.comment {
+    width: 90%; /* Yorum kutusunun genişliğini %90 yapar */
+}
+.container-paragraph {
+    max-width: 500px; /* Paragrafın genişliğini 500px ile sınırlar */
+}
+.comment9 {
+    width: 90%; /* Yorum kutusunun genişliğini %90 yapar */
+    margin-top: -150px; /* Yorum kutusunun üst kısmını -150px kaydırır */
+}
+
+.information {
+    grid-template-columns: 1fr; /* Tek sütun kullanır */
+}
+.düz {
+    margin: 0 20px; /* Sol ve sağ kenarlarından 20px boşluk bırakır */
+}
+
+.Mobile-Number h3 {
+    font-size: 16px; /* Başlık yazı boyutunu 16px yapar */
+}
+
+.Last-forms input {
+    width: 90%; /* Giriş alanlarını %90 genişlikte yapar */
+}
+
+.Last-forms textarea {
+    width: 93%; /* Textarea alanının genişliğini %93 yapar */
+}
+.map iframe {
+    width: 90%; /* Harita iframe'inin genişliğini %90 yapar */
+    margin: 0 20px; /* Sol ve sağ kenarlardan 20px boşluk bırakır */
+}
+.footer {
+    width: 100%; /* Altbilgi genişliğini tam yapar */
+}
+
+.footer-logo {
+    margin-left: 20px; /* Sol kenardan 20px boşluk bırakır */
+}
+
+.footer p {
+    max-width: 90%; /* Altbilgi paragrafının genişliğini %90 yapar */
+    margin: 0 10px; /* Sol ve sağ kenarlardan 10px boşluk bırakır */
+}
+
+.footer-links {
+    gap: 10px; /* Bağlantılar arasına 10px boşluk bırakır */
+    margin-right: 50px; /* Sağ kenardan 50px boşluk bırakır */
+}
+
+.footer-links ul h2 {
+    font-size: 20px; /* Başlık yazı boyutunu 20px yapar */
+}
+
+.footer-links ul li a {
+    font-size: 20px; /* Bağlantı yazı boyutunu 20px yapar */
+}
+}

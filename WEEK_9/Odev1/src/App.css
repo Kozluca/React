@@ -1,0 +1,208 @@
+/* mobil görünüm */
+@media(max-width:576px){
+       
+    /* 1. sayfa */
+.nav-links {
+    display: none; /* Başlangıçta navigasyon linklerini gizler */
+    position: absolute; /* Navigasyonun konumunu mutlak yapar */
+    top: 70px; /* Üstten 70px boşluk bırakır */
+    left: 0; /* Sol kenara hizalar */
+    width: 100%; /* Genişliği %100 yapar */
+    background-color: rgba(6, 6, 6, 0.8); /* Arka plan rengi koyu şeffaf */
+    flex-direction: column; /* Flex düzeninde öğeleri dikey sıralar */
+    align-items: center; /* Öğeleri ortalar */
+    z-index: 1; /* Z-index ile ön planda olmasını sağlar */
+}
+
+.nav-links.open {
+    display: flex; /* Navigasyon açıldığında flex düzeni ile gösterilir */
+}
+.HomePage-logo img {
+    justify-content: start; /* Logo resmini sola hizalar */
+}
+.hamburger {
+    float: right; /* Hamburger menüsünü sağa yaslar */
+    text-align: center; /* Ortalar */
+    align-items: end; /* Elemanları alt kısma hizalar */
+    justify-content: center; /* İçeriği ortalar */
+    display: flex; /* Flex düzeni kullanılır */
+}
+.HomePage-Content {
+    margin: 0 20px; /* Sayfanın sol ve sağ kenarlarından 20px boşluk bırakır */
+}
+.HomePage-Paragraph p {
+    padding-left: 10px; /* Sol iç boşluk */
+    padding-right: 15px; /* Sağ iç boşluk */
+}
+.HomePage-Btn {
+    padding-top: 10px; /* Üstten 10px iç boşluk bırakır */
+}
+.HomePage-Btn button {
+    padding-left: 15px; /* Sol iç boşluk bırakır */
+    text-align: start; /* Metni sola hizalar */
+    width: 100%; /* Düğmeyi tam genişlikte yapar */
+}
+
+/* 1.sayfa alt kısım */
+.HomePage-Boxes {
+flex-direction: column; /* Kutuları dikey sıralar */
+justify-content: center; /* İçeriği ortalar */
+align-items: center; /* İçeriği yatayda ortalar */
+width: 100%; /* Genişliği %100 yapar */
+}
+.box-1 {
+width: 60%; /* Box-1'in genişliğini %60 olarak ayarlar */
+}
+/* 1. sayfa bitiş */
+
+   /* 2.sayfa  */
+   .SecondPage-Start {
+    text-align: center; /* Metni ortalar */
+    justify-content: center; /* İçeriği ortalar */
+    align-items: center; /* İçeriği ortalar */
+}
+.page-titles p {
+    text-align: center; /* Sayfa başlıklarını ortalar */
+    max-width: 200px; /* Başlıklar için maksimum genişlik */
+}
+
+.SecondPage-btns {
+    margin: 30px 30px; /* Düğmelerin etrafında boşluk bırakır */
+    display: grid; /* Grid düzeni kullanılır */
+    grid-template-columns: repeat(2, 1fr); /* İki eşit sütun oluşturur */
+    gap: 20px; /* Sütunlar arasına 20px boşluk bırakır */
+}
+.container-2part {
+    grid-template-columns: 1fr; /* Sadece bir sütun kullanır */
+}
+
+.secondPage-LeftSideContent {
+    margin: 10px 30px; /* Sol ve sağ kenarlardan 30px boşluk bırakır */
+    text-align: start; /* Metni sola hizalar */
+}
+.secondPage-RightSide img {
+    width: 100%; /* Resmi tam genişlikte yapar */
+}
+.secondPage-LeftSideContent2 {
+    margin: 10px 30px; /* Sol ve sağ kenarlardan 30px boşluk bırakır */
+    text-align: start; /* Metni sola hizalar */
+}
+.secondPage-LeftSideContent2 p {
+    max-width: 520px; /* Paragraflar için maksimum genişlik */
+}
+.secondPage-RightSide {
+    margin-top: 50px; /* Üstten 50px boşluk bırakır */
+}
+
+/* 2. sayfa bitiş */
+/* 3.sayfa */
+.container-3part {
+    grid-template-columns: 1fr; /* Sadece bir sütun kullanır */
+    margin: 0 20px; /* Sol ve sağ kenarlardan 20px boşluk bırakır */
+}
+
+.image-container {
+    width: 85%; /* Görsel konteynerinin genişliğini %85 yapar */
+    margin-bottom: 20px; /* Alt boşluk bırakır */
+}
+
+.image-container img {
+    width: 100%; /* Resmi tam genişlikte yapar */
+    height: auto; /* Yüksekliği otomatik ayarlar */
+}
+
+.card-content h3 {
+    font-size: 18px; /* Başlık yazı boyutunu 18px yapar */
+}
+
+.card-content h4 {
+    font-size: 16px; /* Alt başlık yazı boyutunu 16px yapar */
+}
+
+.card-content p {
+    margin-left: 25%; /* Sol boşluk bırakır */
+    font-size: 14px; /* Paragraf yazı boyutunu 14px yapar */
+}
+
+.container-cards {
+    flex-direction: column; /* Kartları dikey sıralar */
+    align-items: center; /* Kartları ortalar */
+}
+
+.card-container {
+    width: 85%; /* Kart genişliğini %85 yapar */
+    margin: 0 25px; /* Kartların sağ ve sol kenarlarından 25px boşluk bırakır */
+}
+
+.card {
+    width: 100%; /* Kart genişliğini tam yapar */
+}
+
+.card img {
+    width: 100%; /* Resmi kart boyutuna uyumlu yapar */
+}
+/* 4.Sayfa */
+.comments {
+    flex-direction: column; /* Yorumları dikey sıralar */
+    align-items: center; /* Yorumları ortalar */
+    gap: 180px; /* Yorumlar arasına 180px boşluk bırakır */
+}
+.comment {
+    width: 90%; /* Yorum kutusunun genişliğini %90 yapar */
+}
+.container-paragraph {
+    max-width: 500px; /* Paragrafın genişliğini 500px ile sınırlar */
+}
+.comment9 {
+    width: 90%; /* Yorum kutusunun genişliğini %90 yapar */
+    margin-top: -150px; /* Yorum kutusunun üst kısmını -150px kaydırır */
+}
+
+.information {
+    grid-template-columns: 1fr; /* Tek sütun kullanır */
+}
+.düz {
+    margin: 0 20px; /* Sol ve sağ kenarlarından 20px boşluk bırakır */
+}
+
+.Mobile-Number h3 {
+    font-size: 16px; /* Başlık yazı boyutunu 16px yapar */
+}
+
+.Last-forms input {
+    width: 90%; /* Giriş alanlarını %90 genişlikte yapar */
+}
+
+.Last-forms textarea {
+    width: 93%; /* Textarea alanının genişliğini %93 yapar */
+}
+.map iframe {
+    width: 90%; /* Harita iframe'inin genişliğini %90 yapar */
+    margin: 0 20px; /* Sol ve sağ kenarlardan 20px boşluk bırakır */
+}
+.footer {
+    width: 100%; /* Altbilgi genişliğini tam yapar */
+}
+
+.footer-logo {
+    margin-left: 20px; /* Sol kenardan 20px boşluk bırakır */
+}
+
+.footer p {
+    max-width: 90%; /* Altbilgi paragrafının genişliğini %90 yapar */
+    margin: 0 10px; /* Sol ve sağ kenarlardan 10px boşluk bırakır */
+}
+
+.footer-links {
+    gap: 10px; /* Bağlantılar arasına 10px boşluk bırakır */
+    margin-right: 50px; /* Sağ kenardan 50px boşluk bırakır */
+}
+
+.footer-links ul h2 {
+    font-size: 20px; /* Başlık yazı boyutunu 20px yapar */
+}
+
+.footer-links ul li a {
+    font-size: 20px; /* Bağlantı yazı boyutunu 20px yapar */
+}
+}

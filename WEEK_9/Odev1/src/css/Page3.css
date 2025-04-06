@@ -1,0 +1,376 @@
+/* 3. sayfa */
+
+.page-titles {
+    padding-top: 50px; /* Başlıkların üst kısmına boşluk bırakılır */
+    text-align: center; /* Başlık metni yatayda ortalanır */
+    justify-content: center; /* İçeriği dikeyde ortalar */
+    display: flex; /* Flex düzeni kullanılır */
+    flex-direction: column; /* Flex öğeleri dikeyde sıralar */
+    align-items: center; /* İçeriği yatayda ortalar */
+}
+.page-titles h2 {
+    color: #385394; /* Başlık metni mavi yapılır */
+    margin-bottom: 20px; /* Başlığın alt kısmına boşluk bırakılır */
+}
+.page-titles p {
+    margin-top: 20px; /* Paragrafın üst kısmına boşluk bırakılır */
+    max-width: 500px; /* Paragrafın maksimum genişliği 500px ile sınırlandırılır */
+}
+.page-titles hr {
+    align-items: center; /* Çizgi ortalanır */
+    justify-content: center; /* Çizgi ortalanır */
+    text-align: center; /* Çizgi metinle birlikte ortalanır */
+    max-width: 50px; /* Çizginin genişliği 50px ile sınırlandırılır */
+    border: solid 5px orange; /* Çizgi turuncu renkte yapılır */
+}
+hr {
+    margin-top: 20px; /* Çizginin üst kısmına boşluk bırakılır */
+    width: 50%; /* Çizginin genişliği %50 yapılır */
+    margin: 0 auto; /* Çizgi yatayda ortalanır */
+    border: none; /* Çizginin kenarları kaldırılır */
+    border-top: 2px solid orange; /* Çizginin üst kenarı turuncu yapılır */
+    border-radius: 10px; /* Çizginin köşeleri yuvarlatılır */
+}
+
+
+.container-3part {
+    margin: 0 200px; /* Sol ve sağda 200px boşluk bırakır */
+    display: grid; /* Grid düzeni kullanır */
+    grid-template-columns: 1fr 1fr 1fr; /* Üç eşit sütun oluşturur */
+    justify-items: center; /* İçerikleri yatayda ortalar */
+    gap: 40px; /* Sütunlar arasında 40px boşluk bırakır */
+}
+.container-3part img {
+    border-radius: 8px; /* Resim köşelerini yuvarlar */
+    border: solid 2px #BDA14A; /* Altın renginde 2px kalınlığında kenarlık ekler */
+}
+.card-container {
+    position: relative;
+    display: flex; /* Flexbox düzeni ile içerik hizalanır */
+    justify-content: center; /* İçerikleri yatayda ortalar */
+    flex-wrap: wrap; /* Kartlar satırlara sarmalarına izin verir */
+    margin-top: 2px; /* Üst tarafta küçük bir boşluk bırakır */
+}
+.card {
+    width: 200px; /* Kartların genişliğini belirler */
+    background-color: white; /* Kart arka planını beyaz yapar */
+    border-radius: 8px; /* Yuvarlak köşe */
+    overflow: hidden; /* Kart içeriği dışarı taşmaz */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Hafif bir gölge ekler */
+    margin: 10px; /* Kartlar arasında boşluk bırakır */
+}
+.card img {
+    width: 100%; /* Resmin genişliğini kartın genişliğine uyar */
+    height: auto; /* Yüksekliği orantılı olarak ayarlanır */
+}
+.card-content h3, .card-content h4 {
+    margin: 0; /* Başlıkların etrafındaki boşlukları kaldırır */
+    padding-top: 0; /* Üst padding'i kaldırır */
+}
+span {
+    text-decoration: line-through; /* Metni üzerine çizgi çeker */
+}
+.container-cards {
+    margin-top: 0; /* Üst boşluğu sıfırlar */
+    display: flex; /* Flexbox düzeni ile hizalama yapılır */
+    justify-content: center; /* İçeriği yatayda ortalar */
+    align-items: center; /* İçeriği dikeyde ortalar */
+    text-align: center; /* Yazıları ortalar */
+    gap: 0; /* Kartlar arasında boşluk bırakmaz */
+}
+.card-content p {
+    display: flex; /* Flexbox düzeni ile içerikleri hizalar */
+    align-items: center; /* Yatayda ortalar */
+    justify-content: flex-start; /* İçeriği sola hizalar */
+}
+.card-content i {
+    margin-left: 15px; /* Simgeyi soldan 15px uzaklaştırır */
+    margin-right: 30px; /* Simgeyi sağdan 30px uzaklaştırır */
+}
+ 
+.image-container {
+    position: relative; /* Konumlandırma için relative kullanılır */
+    display: inline-block; /* Blok eleman olarak satır içi şekilde çalışır */
+    overflow: hidden; /* Resmin dışına taşan kısmı gizler */
+}
+.image-container img {
+    width: 100%; /* Resmin genişliği kapsayıcıya göre ayarlanır */
+    height: auto; /* Yükseklik otomatik olarak orantılıdır */
+    display: block; /* Blok eleman olarak gösterilir */
+}
+ 
+.image-container .trainerInformation {
+    position: absolute; /* Kutuyu resmin üzerinde konumlandırır */
+    bottom: 5%; /* Resmin altına 5% boşluk bırakır */
+    left: 50%; /* Kutuyu yatayda ortalar */
+    transform: translateX(-50%); /* Kutu genişliğinin yarısı kadar sola kaydırarak tam olarak ortalanmasını sağlar */
+    width: 80%; /* Kutu genişliğini %80 yapar */
+    background-color: rgba(54, 36, 53, 0.3); /* Koyu renkli, yarı saydam bir arka plan rengi ekler */
+    color: white; /* Yazı rengini beyaz yapar */
+    border-radius: 10px; /* Yuvarlak köşe ekler */
+    padding: 10px; /* İç boşluk bırakır */
+    text-align: center; /* Yazıyı merkeze hizalar */
+    opacity: 0; /* Başlangıçta görünmez yapar */
+    transition: opacity 0.3s; /* Opaklık değişimini animasyonla yapar */
+}
+ 
+.image-container:hover .trainerInformation {
+    opacity: 1; /* Hover ile görünür hale gelir */
+}
+ 
+   /* çerçeve animasyonu */
+   .image-container::before {
+    content: ""; /* İçeriği boş bırakır */
+    position: absolute; /* Konumlandırmayı absolute yapar */
+    top: 0; left: 0; /* Çerçeveyi üst ve sol köşeye yerleştirir */
+    width: 100%; height: 100%; /* Çerçevenin genişliğini ve yüksekliğini resme göre ayarlar */
+    border: 3px solid transparent; /* Başlangıçta şeffaf bir çerçeve ekler */
+    box-sizing: border-box; /* Border'ı eleman boyutunun bir parçası olarak hesaplar */
+    transition: all 0.4s ease-in-out; /* Çerçevenin animasyonlu şekilde görünmesini sağlar */
+}
+.image-container:hover::before {
+    border-color: #F39C11; /* Çerçevenin rengini turuncuya çevirir */
+    animation: border-animation 1s forwards; /* Border animasyonunu başlatır */
+}
+ 
+   /* çerçeve animasyonu için keyframes */
+   @keyframes border-animation {
+    0% {
+        border-top-width: 0; /* Çerçevenin üst kısmı yok */
+        border-right-width: 0; /* Çerçevenin sağ kısmı yok */
+        border-bottom-width: 0; /* Çerçevenin alt kısmı yok */
+        border-left-width: 0; /* Çerçevenin sol kısmı yok */
+    }
+    25% {
+        border-top-width: 5px; /* Üst kenar 5px olur */
+        border-right-width: 0; /* Sağ kenar yok */
+        border-bottom-width: 0; /* Alt kenar yok */
+        border-left-width: 0; /* Sol kenar yok */
+    }
+    50% {
+        border-top-width: 5px; /* Üst kenar 5px olur */
+        border-right-width: 5px; /* Sağ kenar 5px olur */
+        border-bottom-width: 5px; /* Alt kenar 5px olur */
+        border-left-width: 0; /* Sol kenar yok */
+    }
+    75% {
+        border-top-width: 5px; /* Üst kenar 5px olur */
+        border-right-width: 0; /* Sağ kenar yok */
+        border-bottom-width: 0; /* Alt kenar yok */
+        border-left-width: 0; /* Sol kenar yok */
+    }
+    100% {
+        border-top-width: 5px; /* Üst kenar 5px olur */
+        border-right-width: 5px; /* Sağ kenar 5px olur */
+        border-bottom-width: 5px; /* Alt kenar 5px olur */
+        border-left-width: 5px; /* Sol kenar 5px olur */
+    }
+}
+/* mobil görünüm */
+@media(max-width:576px){
+       
+    /* 1. sayfa */
+.nav-links {
+    display: none; /* Başlangıçta navigasyon linklerini gizler */
+    position: absolute; /* Navigasyonun konumunu mutlak yapar */
+    top: 70px; /* Üstten 70px boşluk bırakır */
+    left: 0; /* Sol kenara hizalar */
+    width: 100%; /* Genişliği %100 yapar */
+    background-color: rgba(6, 6, 6, 0.8); /* Arka plan rengi koyu şeffaf */
+    flex-direction: column; /* Flex düzeninde öğeleri dikey sıralar */
+    align-items: center; /* Öğeleri ortalar */
+    z-index: 1; /* Z-index ile ön planda olmasını sağlar */
+}
+
+.nav-links.open {
+    display: flex; /* Navigasyon açıldığında flex düzeni ile gösterilir */
+}
+.HomePage-logo img {
+    justify-content: start; /* Logo resmini sola hizalar */
+}
+.hamburger {
+    float: right; /* Hamburger menüsünü sağa yaslar */
+    text-align: center; /* Ortalar */
+    align-items: end; /* Elemanları alt kısma hizalar */
+    justify-content: center; /* İçeriği ortalar */
+    display: flex; /* Flex düzeni kullanılır */
+}
+.HomePage-Content {
+    margin: 0 20px; /* Sayfanın sol ve sağ kenarlarından 20px boşluk bırakır */
+}
+.HomePage-Paragraph p {
+    padding-left: 10px; /* Sol iç boşluk */
+    padding-right: 15px; /* Sağ iç boşluk */
+}
+.HomePage-Btn {
+    padding-top: 10px; /* Üstten 10px iç boşluk bırakır */
+}
+.HomePage-Btn button {
+    padding-left: 15px; /* Sol iç boşluk bırakır */
+    text-align: start; /* Metni sola hizalar */
+    width: 100%; /* Düğmeyi tam genişlikte yapar */
+}
+
+/* 1.sayfa alt kısım */
+.HomePage-Boxes {
+flex-direction: column; /* Kutuları dikey sıralar */
+justify-content: center; /* İçeriği ortalar */
+align-items: center; /* İçeriği yatayda ortalar */
+width: 100%; /* Genişliği %100 yapar */
+}
+.box-1 {
+width: 60%; /* Box-1'in genişliğini %60 olarak ayarlar */
+}
+/* 1. sayfa bitiş */
+
+   /* 2.sayfa  */
+   .SecondPage-Start {
+    text-align: center; /* Metni ortalar */
+    justify-content: center; /* İçeriği ortalar */
+    align-items: center; /* İçeriği ortalar */
+}
+.page-titles p {
+    text-align: center; /* Sayfa başlıklarını ortalar */
+    max-width: 200px; /* Başlıklar için maksimum genişlik */
+}
+
+.SecondPage-btns {
+    margin: 30px 30px; /* Düğmelerin etrafında boşluk bırakır */
+    display: grid; /* Grid düzeni kullanılır */
+    grid-template-columns: repeat(2, 1fr); /* İki eşit sütun oluşturur */
+    gap: 20px; /* Sütunlar arasına 20px boşluk bırakır */
+}
+.container-2part {
+    grid-template-columns: 1fr; /* Sadece bir sütun kullanır */
+}
+
+.secondPage-LeftSideContent {
+    margin: 10px 30px; /* Sol ve sağ kenarlardan 30px boşluk bırakır */
+    text-align: start; /* Metni sola hizalar */
+}
+.secondPage-RightSide img {
+    width: 100%; /* Resmi tam genişlikte yapar */
+}
+.secondPage-LeftSideContent2 {
+    margin: 10px 30px; /* Sol ve sağ kenarlardan 30px boşluk bırakır */
+    text-align: start; /* Metni sola hizalar */
+}
+.secondPage-LeftSideContent2 p {
+    max-width: 520px; /* Paragraflar için maksimum genişlik */
+}
+.secondPage-RightSide {
+    margin-top: 50px; /* Üstten 50px boşluk bırakır */
+}
+
+/* 2. sayfa bitiş */
+/* 3.sayfa */
+.container-3part {
+    grid-template-columns: 1fr; /* Sadece bir sütun kullanır */
+    margin: 0 20px; /* Sol ve sağ kenarlardan 20px boşluk bırakır */
+}
+
+.image-container {
+    width: 85%; /* Görsel konteynerinin genişliğini %85 yapar */
+    margin-bottom: 20px; /* Alt boşluk bırakır */
+}
+
+.image-container img {
+    width: 100%; /* Resmi tam genişlikte yapar */
+    height: auto; /* Yüksekliği otomatik ayarlar */
+}
+
+.card-content h3 {
+    font-size: 18px; /* Başlık yazı boyutunu 18px yapar */
+}
+
+.card-content h4 {
+    font-size: 16px; /* Alt başlık yazı boyutunu 16px yapar */
+}
+
+.card-content p {
+    margin-left: 25%; /* Sol boşluk bırakır */
+    font-size: 14px; /* Paragraf yazı boyutunu 14px yapar */
+}
+
+.container-cards {
+    flex-direction: column; /* Kartları dikey sıralar */
+    align-items: center; /* Kartları ortalar */
+}
+
+.card-container {
+    width: 85%; /* Kart genişliğini %85 yapar */
+    margin: 0 25px; /* Kartların sağ ve sol kenarlarından 25px boşluk bırakır */
+}
+
+.card {
+    width: 100%; /* Kart genişliğini tam yapar */
+}
+
+.card img {
+    width: 100%; /* Resmi kart boyutuna uyumlu yapar */
+}
+/* 4.Sayfa */
+.comments {
+    flex-direction: column; /* Yorumları dikey sıralar */
+    align-items: center; /* Yorumları ortalar */
+    gap: 180px; /* Yorumlar arasına 180px boşluk bırakır */
+}
+.comment {
+    width: 90%; /* Yorum kutusunun genişliğini %90 yapar */
+}
+.container-paragraph {
+    max-width: 500px; /* Paragrafın genişliğini 500px ile sınırlar */
+}
+.comment9 {
+    width: 90%; /* Yorum kutusunun genişliğini %90 yapar */
+    margin-top: -150px; /* Yorum kutusunun üst kısmını -150px kaydırır */
+}
+
+.information {
+    grid-template-columns: 1fr; /* Tek sütun kullanır */
+}
+.düz {
+    margin: 0 20px; /* Sol ve sağ kenarlarından 20px boşluk bırakır */
+}
+
+.Mobile-Number h3 {
+    font-size: 16px; /* Başlık yazı boyutunu 16px yapar */
+}
+
+.Last-forms input {
+    width: 90%; /* Giriş alanlarını %90 genişlikte yapar */
+}
+
+.Last-forms textarea {
+    width: 93%; /* Textarea alanının genişliğini %93 yapar */
+}
+.map iframe {
+    width: 90%; /* Harita iframe'inin genişliğini %90 yapar */
+    margin: 0 20px; /* Sol ve sağ kenarlardan 20px boşluk bırakır */
+}
+.footer {
+    width: 100%; /* Altbilgi genişliğini tam yapar */
+}
+
+.footer-logo {
+    margin-left: 20px; /* Sol kenardan 20px boşluk bırakır */
+}
+
+.footer p {
+    max-width: 90%; /* Altbilgi paragrafının genişliğini %90 yapar */
+    margin: 0 10px; /* Sol ve sağ kenarlardan 10px boşluk bırakır */
+}
+
+.footer-links {
+    gap: 10px; /* Bağlantılar arasına 10px boşluk bırakır */
+    margin-right: 50px; /* Sağ kenardan 50px boşluk bırakır */
+}
+
+.footer-links ul h2 {
+    font-size: 20px; /* Başlık yazı boyutunu 20px yapar */
+}
+
+.footer-links ul li a {
+    font-size: 20px; /* Bağlantı yazı boyutunu 20px yapar */
+}
+}

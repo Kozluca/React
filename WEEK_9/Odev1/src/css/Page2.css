@@ -1,0 +1,351 @@
+/* 2. Sayfa */
+.SecondPage-Start {
+    display: flex; /* Flexbox düzeni kullanılır */
+    flex-direction: column; /* Flex düzeni dikey olur */
+    justify-content: center; /* İçeriği dikeyde ortalar */
+    align-items: center; /* İçeriği yatayda ortalar */
+    text-align: center; /* İçerik yatayda ortalanır */
+}
+.page-titles {
+    padding-top: 50px; /* Başlıkların üst kısmına boşluk bırakılır */
+    text-align: center; /* Başlık metni yatayda ortalanır */
+    justify-content: center; /* İçeriği dikeyde ortalar */
+    display: flex; /* Flex düzeni kullanılır */
+    flex-direction: column; /* Flex öğeleri dikeyde sıralar */
+    align-items: center; /* İçeriği yatayda ortalar */
+}
+.page-titles h2 {
+    color: #385394; /* Başlık metni mavi yapılır */
+    margin-bottom: 20px; /* Başlığın alt kısmına boşluk bırakılır */
+}
+.page-titles p {
+    margin-top: 20px; /* Paragrafın üst kısmına boşluk bırakılır */
+    max-width: 500px; /* Paragrafın maksimum genişliği 500px ile sınırlandırılır */
+}
+.page-titles hr {
+    align-items: center; /* Çizgi ortalanır */
+    justify-content: center; /* Çizgi ortalanır */
+    text-align: center; /* Çizgi metinle birlikte ortalanır */
+    max-width: 50px; /* Çizginin genişliği 50px ile sınırlandırılır */
+    border: solid 5px orange; /* Çizgi turuncu renkte yapılır */
+}
+hr {
+    margin-top: 20px; /* Çizginin üst kısmına boşluk bırakılır */
+    width: 50%; /* Çizginin genişliği %50 yapılır */
+    margin: 0 auto; /* Çizgi yatayda ortalanır */
+    border: none; /* Çizginin kenarları kaldırılır */
+    border-top: 2px solid orange; /* Çizginin üst kenarı turuncu yapılır */
+    border-radius: 10px; /* Çizginin köşeleri yuvarlatılır */
+}
+
+    /* 2.sayfa */
+
+    /* grey clippath */
+    #Our-Classes {
+        position: relative;  /* Konumlandırmayı sağlamak için */
+    }
+    
+    .grey-rectangle {
+        z-index: -100; /* Z-index ile öğenin diğer öğelerin arkasında olmasını sağlar */
+        width: 100%; /* Genişlik tam ekran yapılır */
+        height: 650px; /* Yükseklik 650px olarak belirlenir */
+        background-color: #F6F6F6; /* Arka plan rengi gri yapılır */
+        clip-path: polygon(32% 0%, 100% 0%, 100% 100%, 50% 100%); /* Clip-path ile dörtgen şekli verilir */
+        position: absolute; /* Konumlandırma yapılır */
+        top: 0; /* Üstten sıfırlanır */
+        left: 0; /* Soldan sıfırlanır */
+    }
+    
+    /* clippath end */
+    .SecondPage-btns {
+        margin-top: 30px; /* Üstten 30px boşluk bırakılır */
+        display: flex; /* Flex düzeni kullanılır */
+        justify-content: center; /* Butonlar yatayda ortalanır */
+        gap: 200px; /* Butonlar arasına 200px boşluk bırakılır */
+    }
+    
+    .SecondPage-btns button {
+        font-size: 24px; /* Buton metni boyutu */
+        background-color: #355592; /* Buton arka plan rengi mavi yapılır */
+        color: white; /* Buton metni beyaz yapılır */
+        border: none; /* Kenarlık kaldırılır */
+        padding: 5px 10px; /* Butonun iç kenar boşlukları */
+        border-radius: 5px; /* Buton köşeleri yuvarlatılır */
+    }
+    .SecondPage-btns button:hover {
+        background-color: #F29B11; /* Hover durumunda buton arka planı sarıya dönüşür */
+        cursor: pointer; /* Fare simgesi el olur */
+    }
+    .container-2part {
+        margin-top: 50px; /* Üstten boşluk bırakılır */
+        display: grid; /* Grid düzeni kullanılır */
+        grid-template-columns: 1fr 1fr; /* İki eşit sütun düzeni */
+    }
+    
+    .secondPage-LeftSideContent {
+        margin-left: 200px; /* Sol taraftan 200px boşluk bırakılır */
+    }
+    .secondPage-LeftSideContent p {
+        max-width: 520px; /* Paragraf genişliği sınırlandırılır */
+    }
+    .secondPage-Paragraph{
+    margin-top: 20px;
+    }
+    .secondPage-RightSide {
+        display: flex; /* Flex düzeni kullanılır */
+        justify-content: center; /* İçerik yatayda ortalanır */
+    }
+    .secondPage-RightSide img {
+        width: auto; /* Görselin genişliği otomatik olarak ayarlanır */
+        max-height: 260px; /* Görselin yüksekliği 260px ile sınırlandırılır */
+    }
+    
+    .secondPage-LeftSideContent2{
+    margin-left: 150px;
+    }
+    .secondPage-LeftSideContent2 p{
+    margin-top: 20px;
+    max-width: 380px;
+    color: #4c4c4c;
+    }
+  /* Sayfa form düzeni */
+.secondPage-Form {
+    margin-top: 20px; /* Formun üst kısmına 20px boşluk bırakılır */
+}
+.secondPage-Form input {
+    font-size: 20px; /* Input metni boyutu */
+    margin: 0 5px; /* Input elemanları arasına 5px boşluk bırakılır */
+}
+.calculate-btn {
+    margin-top: 10px; /* Üstten 10px boşluk bırakılır */
+    margin-left: 5px; /* Soldan 5px boşluk bırakılır */
+}
+.calculate-btn button {
+    display: flex; /* Flex düzeni kullanılır */
+    text-align: center; /* Metin ortalanır */
+    justify-content: center; /* İçerik yatayda ortalanır */
+    align-items: center; /* İçerik dikeyde ortalanır */
+    border-radius: 5px; /* Buton köşeleri yuvarlatılır */
+    color: white; /* Buton metni beyaz yapılır */
+    background-color: #355592; /* Buton arka planı mavi yapılır */
+    font-size: 20px; /* Buton metni boyutu */
+    width: 100px; /* Buton genişliği 100px yapılır */
+    height: 30px; /* Buton yüksekliği 30px yapılır */
+}
+.calculate-btn button:hover {
+    background-color: #F29B11; /* Hover durumunda buton arka planı sarıya dönüşür */
+}
+
+.icon-left {
+    transform: translateX(10px); /* Sol hareket */
+  }
+/* 2. sayfa bitiş */
+
+/* mobil görünüm */
+@media(max-width:576px){
+       
+    /* 1. sayfa */
+.nav-links {
+    display: none; /* Başlangıçta navigasyon linklerini gizler */
+    position: absolute; /* Navigasyonun konumunu mutlak yapar */
+    top: 70px; /* Üstten 70px boşluk bırakır */
+    left: 0; /* Sol kenara hizalar */
+    width: 100%; /* Genişliği %100 yapar */
+    background-color: rgba(6, 6, 6, 0.8); /* Arka plan rengi koyu şeffaf */
+    flex-direction: column; /* Flex düzeninde öğeleri dikey sıralar */
+    align-items: center; /* Öğeleri ortalar */
+    z-index: 1; /* Z-index ile ön planda olmasını sağlar */
+}
+
+.nav-links.open {
+    display: flex; /* Navigasyon açıldığında flex düzeni ile gösterilir */
+}
+.HomePage-logo img {
+    justify-content: start; /* Logo resmini sola hizalar */
+}
+.hamburger {
+    float: right; /* Hamburger menüsünü sağa yaslar */
+    text-align: center; /* Ortalar */
+    align-items: end; /* Elemanları alt kısma hizalar */
+    justify-content: center; /* İçeriği ortalar */
+    display: flex; /* Flex düzeni kullanılır */
+}
+.HomePage-Content {
+    margin: 0 20px; /* Sayfanın sol ve sağ kenarlarından 20px boşluk bırakır */
+}
+.HomePage-Paragraph p {
+    padding-left: 10px; /* Sol iç boşluk */
+    padding-right: 15px; /* Sağ iç boşluk */
+}
+.HomePage-Btn {
+    padding-top: 10px; /* Üstten 10px iç boşluk bırakır */
+}
+.HomePage-Btn button {
+    padding-left: 15px; /* Sol iç boşluk bırakır */
+    text-align: start; /* Metni sola hizalar */
+    width: 100%; /* Düğmeyi tam genişlikte yapar */
+}
+
+/* 1.sayfa alt kısım */
+.HomePage-Boxes {
+flex-direction: column; /* Kutuları dikey sıralar */
+justify-content: center; /* İçeriği ortalar */
+align-items: center; /* İçeriği yatayda ortalar */
+width: 100%; /* Genişliği %100 yapar */
+}
+.box-1 {
+width: 60%; /* Box-1'in genişliğini %60 olarak ayarlar */
+}
+/* 1. sayfa bitiş */
+
+   /* 2.sayfa  */
+   .SecondPage-Start {
+    text-align: center; /* Metni ortalar */
+    justify-content: center; /* İçeriği ortalar */
+    align-items: center; /* İçeriği ortalar */
+}
+.page-titles p {
+    text-align: center; /* Sayfa başlıklarını ortalar */
+    max-width: 200px; /* Başlıklar için maksimum genişlik */
+}
+
+.SecondPage-btns {
+    margin: 30px 30px; /* Düğmelerin etrafında boşluk bırakır */
+    display: grid; /* Grid düzeni kullanılır */
+    grid-template-columns: repeat(2, 1fr); /* İki eşit sütun oluşturur */
+    gap: 20px; /* Sütunlar arasına 20px boşluk bırakır */
+}
+.container-2part {
+    grid-template-columns: 1fr; /* Sadece bir sütun kullanır */
+}
+
+.secondPage-LeftSideContent {
+    margin: 10px 30px; /* Sol ve sağ kenarlardan 30px boşluk bırakır */
+    text-align: start; /* Metni sola hizalar */
+}
+.secondPage-RightSide img {
+    width: 100%; /* Resmi tam genişlikte yapar */
+}
+.secondPage-LeftSideContent2 {
+    margin: 10px 30px; /* Sol ve sağ kenarlardan 30px boşluk bırakır */
+    text-align: start; /* Metni sola hizalar */
+}
+.secondPage-LeftSideContent2 p {
+    max-width: 520px; /* Paragraflar için maksimum genişlik */
+}
+.secondPage-RightSide {
+    margin-top: 50px; /* Üstten 50px boşluk bırakır */
+}
+
+/* 2. sayfa bitiş */
+/* 3.sayfa */
+.container-3part {
+    grid-template-columns: 1fr; /* Sadece bir sütun kullanır */
+    margin: 0 20px; /* Sol ve sağ kenarlardan 20px boşluk bırakır */
+}
+
+.image-container {
+    width: 85%; /* Görsel konteynerinin genişliğini %85 yapar */
+    margin-bottom: 20px; /* Alt boşluk bırakır */
+}
+
+.image-container img {
+    width: 100%; /* Resmi tam genişlikte yapar */
+    height: auto; /* Yüksekliği otomatik ayarlar */
+}
+
+.card-content h3 {
+    font-size: 18px; /* Başlık yazı boyutunu 18px yapar */
+}
+
+.card-content h4 {
+    font-size: 16px; /* Alt başlık yazı boyutunu 16px yapar */
+}
+
+.card-content p {
+    margin-left: 25%; /* Sol boşluk bırakır */
+    font-size: 14px; /* Paragraf yazı boyutunu 14px yapar */
+}
+
+.container-cards {
+    flex-direction: column; /* Kartları dikey sıralar */
+    align-items: center; /* Kartları ortalar */
+}
+
+.card-container {
+    width: 85%; /* Kart genişliğini %85 yapar */
+    margin: 0 25px; /* Kartların sağ ve sol kenarlarından 25px boşluk bırakır */
+}
+
+.card {
+    width: 100%; /* Kart genişliğini tam yapar */
+}
+
+.card img {
+    width: 100%; /* Resmi kart boyutuna uyumlu yapar */
+}
+/* 4.Sayfa */
+.comments {
+    flex-direction: column; /* Yorumları dikey sıralar */
+    align-items: center; /* Yorumları ortalar */
+    gap: 180px; /* Yorumlar arasına 180px boşluk bırakır */
+}
+.comment {
+    width: 90%; /* Yorum kutusunun genişliğini %90 yapar */
+}
+.container-paragraph {
+    max-width: 500px; /* Paragrafın genişliğini 500px ile sınırlar */
+}
+.comment9 {
+    width: 90%; /* Yorum kutusunun genişliğini %90 yapar */
+    margin-top: -150px; /* Yorum kutusunun üst kısmını -150px kaydırır */
+}
+
+.information {
+    grid-template-columns: 1fr; /* Tek sütun kullanır */
+}
+.düz {
+    margin: 0 20px; /* Sol ve sağ kenarlarından 20px boşluk bırakır */
+}
+
+.Mobile-Number h3 {
+    font-size: 16px; /* Başlık yazı boyutunu 16px yapar */
+}
+
+.Last-forms input {
+    width: 90%; /* Giriş alanlarını %90 genişlikte yapar */
+}
+
+.Last-forms textarea {
+    width: 93%; /* Textarea alanının genişliğini %93 yapar */
+}
+.map iframe {
+    width: 90%; /* Harita iframe'inin genişliğini %90 yapar */
+    margin: 0 20px; /* Sol ve sağ kenarlardan 20px boşluk bırakır */
+}
+.footer {
+    width: 100%; /* Altbilgi genişliğini tam yapar */
+}
+
+.footer-logo {
+    margin-left: 20px; /* Sol kenardan 20px boşluk bırakır */
+}
+
+.footer p {
+    max-width: 90%; /* Altbilgi paragrafının genişliğini %90 yapar */
+    margin: 0 10px; /* Sol ve sağ kenarlardan 10px boşluk bırakır */
+}
+
+.footer-links {
+    gap: 10px; /* Bağlantılar arasına 10px boşluk bırakır */
+    margin-right: 50px; /* Sağ kenardan 50px boşluk bırakır */
+}
+
+.footer-links ul h2 {
+    font-size: 20px; /* Başlık yazı boyutunu 20px yapar */
+}
+
+.footer-links ul li a {
+    font-size: 20px; /* Bağlantı yazı boyutunu 20px yapar */
+}
+}
